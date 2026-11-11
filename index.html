@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="Unhas delicadas, naturais e duradouras com Letícia Fernanda, nail designer em Poços de Caldas. Agende seu horário pelo WhatsApp.">
+  <title>Letícia Fernanda | Nail Designer em Poços de Caldas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f5f0;
+      --white: #fffefa;
+      --ink: #202a25;
+      --muted: #737a73;
+      --green: #355446;
+      --green-dark: #233a30;
+      --line: #dedfd7;
+      --coral: #c87864;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+    a { color: inherit; text-decoration: none; }
+    button, input, select { font: inherit; }
+    button, a, input, select { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+
+    .topbar { height: 76px; display: flex; align-items: center; border-bottom: 1px solid var(--line); background: rgba(246,245,240,.96); position: sticky; top: 0; z-index: 5; }
+    .nav { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+    .brand { display: inline-flex; gap: 11px; align-items: center; }
+    .brand-mark { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid var(--green); border-radius: 50%; color: var(--green); font: 600 14px var(--serif); }
+    .brand-name { font: 600 15px var(--serif); letter-spacing: 0; }
+    .nav-links { display: flex; align-items: center; gap: 32px; font-size: 13px; font-weight: 500; }
+    .nav-links a:not(.nav-cta) { color: #515a53; }
+    .nav-links a:not(.nav-cta):hover { color: var(--green); }
+    .nav-cta, .button { display: inline-flex; min-height: 46px; padding: 0 21px; align-items: center; justify-content: center; gap: 9px; background: var(--green); color: white; border: 1px solid var(--green); border-radius: 3px; font-size: 13px; font-weight: 600; transition: background .2s, transform .2s; }
+    .nav-cta:hover, .button:hover { background: var(--green-dark); transform: translateY(-1px); }
+
+    .hero { display: grid; grid-template-columns: 1.03fr .97fr; gap: 8%; align-items: center; padding-block: 74px 88px; min-height: 570px; }
+    .eyebrow { display: flex; align-items: center; gap: 10px; text-transform: uppercase; letter-spacing: 1.4px; font-size: 10px; font-weight: 700; color: var(--green); }
+    .eyebrow::before { content: ""; width: 25px; height: 1px; background: var(--coral); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin: 20px 0 18px; max-width: 520px; font: 500 clamp(43px, 5vw, 66px)/1.08 var(--serif); letter-spacing: 0; }
+    h1 em { color: var(--green); font-weight: 500; }
+    .hero-copy { max-width: 420px; color: var(--muted); font-size: 15px; line-height: 1.8; margin-bottom: 27px; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; }
+    .text-link { font-size: 13px; font-weight: 600; color: var(--green); border-bottom: 1px solid #aeb9af; padding: 8px 0; }
+    .hero-rating { display: flex; align-items: center; gap: 10px; margin-top: 35px; color: var(--muted); font-size: 12px; }
+    .stars { color: #b78342; letter-spacing: 2px; font-size: 14px; }
+    .hero-photo { height: 440px; position: relative; margin: 0 18px 0 0; }
+    .hero-photo::before { content: ""; position: absolute; inset: 18px -18px -18px 18px; border: 1px solid #c8d0c6; z-index: 0; }
+    .hero-photo img { position: relative; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; z-index: 1; background: #e8e4dc; }
+    .photo-note { position: absolute; z-index: 2; right: -17px; bottom: 20px; padding: 12px 15px; background: var(--white); font: italic 15px var(--serif); color: var(--green); }
+
+    .trust-strip { background: var(--green); color: white; }
+    .trust-inner { min-height: 112px; display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; }
+    .trust-item { text-align: center; padding: 18px; border-right: 1px solid rgba(255,255,255,.2); }
+    .trust-item:last-child { border: 0; }
+    .trust-item strong { display: block; font: 500 24px var(--serif); }
+    .trust-item span { display: block; margin-top: 5px; color: #d6dfd8; font-size: 11px; }
+
+    .section { padding-block: 94px; }
+    .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 34px; }
+    h2 { margin: 13px 0 0; font: 500 clamp(34px, 4vw, 46px)/1.15 var(--serif); letter-spacing: 0; }
+    .section-intro { max-width: 360px; margin: 0 0 4px; color: var(--muted); font-size: 13px; line-height: 1.75; }
+    .gallery { display: grid; grid-template-columns: 1.12fr .88fr; grid-template-rows: 245px 245px; gap: 14px; }
+    .gallery figure { overflow: hidden; position: relative; margin: 0; background: #e9e5dc; }
+    .gallery figure:first-child { grid-row: span 2; }
+    .gallery img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .5s ease; }
+    .gallery figure:hover img { transform: scale(1.035); }
+    .gallery figcaption { position: absolute; inset: auto 0 0; padding: 36px 18px 15px; color: white; font: 500 17px var(--serif); background: linear-gradient(transparent, rgba(20,30,24,.55)); }
+    .image-credit { color: var(--muted); margin: 13px 0 0; font-size: 10px; }
+
+    .about { background: #e9ede6; }
+    .about-grid { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 9%; }
+    .about-photo { height: 390px; background: #d9ddd5; overflow: hidden; }
+    .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 34%; }
+    .about-copy p { margin: 20px 0 0; max-width: 500px; color: #59645d; font-size: 14px; line-height: 1.9; }
+    .about-note { display: flex; gap: 12px; align-items: flex-start; margin-top: 23px; padding-top: 18px; border-top: 1px solid #cbd4ca; font-size: 12px; line-height: 1.6; color: var(--green-dark); }
+    .about-note span { color: var(--coral); font-size: 16px; }
+
+    .reviews { padding-block: 86px; }
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .review { padding: 25px 24px 26px 0; }
+    .review + .review { border-left: 1px solid var(--line); padding-left: 24px; }
+    .review .stars { font-size: 12px; }
+    .review blockquote { margin: 15px 0 16px; font: italic 18px/1.55 var(--serif); }
+    .review cite { color: var(--muted); font-size: 11px; font-style: normal; }
+
+    .booking { background: var(--green-dark); color: white; padding-block: 82px; }
+    .booking-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: 9%; align-items: start; }
+    .booking .eyebrow { color: #c9d8ce; }
+    .booking h2 { max-width: 390px; margin-top: 16px; }
+    .booking-copy { max-width: 365px; color: #c7d0c9; font-size: 13px; line-height: 1.8; margin-top: 18px; }
+    .booking-contact { margin-top: 28px; color: #e0e7e1; font-size: 13px; line-height: 2; }
+    .booking-contact a { text-decoration: underline; text-underline-offset: 3px; }
+    .booking-form { display: grid; grid-template-columns: 1fr 1fr; gap: 17px 14px; }
+    .field { display: flex; flex-direction: column; gap: 8px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { color: #d9e1da; font-size: 11px; font-weight: 600; }
+    .field input, .field select { width: 100%; min-height: 48px; border: 1px solid #637469; border-radius: 2px; outline: 0; padding: 0 13px; color: white; background: #2b4438; font-size: 13px; }
+    .field input:focus, .field select:focus { border-color: #d4a08d; box-shadow: 0 0 0 2px rgba(212,160,141,.15); }
+    .field input::placeholder { color: #aebbb1; }
+    .field select option { color: var(--ink); background: white; }
+    .booking-form .button { width: 100%; min-height: 49px; grid-column: 1 / -1; background: #d58b72; border-color: #d58b72; color: #202a25; }
+    .booking-form .button:hover { background: #e3a18a; }
+    .form-note { grid-column: 1 / -1; margin: -7px 0 0; color: #becac1; font-size: 10px; line-height: 1.6; }
+
+    footer { background: #1d3027; color: #d2dbd4; }
+    .footer-inner { min-height: 95px; display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: 11px; }
+    .footer-name { color: white; font: 500 17px var(--serif); }
+    .footer-address { text-align: right; line-height: 1.7; }
+    .mobile-book { display: none; }
+
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 36px, 540px); }
+      .topbar { height: 66px; }
+      .nav-links { gap: 16px; }
+      .nav-links > a:not(.nav-cta) { display: none; }
+      .nav-cta { min-height: 39px; padding: 0 13px; font-size: 11px; }
+      .hero { grid-template-columns: 1fr; gap: 38px; padding-block: 53px 65px; }
+      .hero-copy { font-size: 14px; }
+      .hero-photo { height: min(112vw, 420px); margin-right: 12px; }
+      .photo-note { right: -12px; }
+      .trust-inner { min-height: 95px; }
+      .trust-item { padding: 14px 5px; }
+      .trust-item strong { font-size: 20px; }
+      .trust-item span { font-size: 9px; }
+      .section { padding-block: 68px; }
+      .section-heading { display: block; margin-bottom: 25px; }
+      .section-intro { margin-top: 14px; }
+      .gallery { grid-template-rows: 255px 170px; gap: 9px; }
+      .gallery figure:first-child { grid-row: span 2; }
+      .gallery figcaption { font-size: 14px; padding: 30px 11px 12px; }
+      .about-grid { grid-template-columns: 1fr; gap: 28px; }
+      .about-photo { height: 310px; }
+      .reviews { padding-block: 65px; }
+      .review-grid { grid-template-columns: 1fr; }
+      .review, .review + .review { padding: 22px 0; border-left: 0; }
+      .review + .review { border-top: 1px solid var(--line); }
+      .review blockquote { margin-block: 10px; }
+      .booking { padding-block: 65px; }
+      .booking-grid { grid-template-columns: 1fr; gap: 31px; }
+      .booking-form { gap: 14px 10px; }
+      .field input, .field select { font-size: 12px; padding-inline: 10px; }
+      .footer-inner { min-height: 110px; align-items: flex-start; justify-content: center; flex-direction: column; gap: 6px; padding-block: 18px; }
+      .footer-address { text-align: left; }
+      .mobile-book { display: flex; position: fixed; z-index: 4; bottom: 12px; left: 12px; right: 12px; box-shadow: 0 5px 22px rgba(16,34,25,.22); }
+      body { padding-bottom: 70px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Letícia Fernanda, início">
+        <span class="brand-mark" aria-hidden="true">LF</span>
+        <span class="brand-name">Letícia Fernanda</span>
+      </a>
+      <div class="nav-links">
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a class="nav-cta" href="#agendar">Agendar horário <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="inicio">
+      <div>
+        <div class="eyebrow">Nail designer · Poços de Caldas</div>
+        <h1>Delicadeza em cada <em>detalhe.</em></h1>
+        <p class="hero-copy">Unhas com acabamento impecável, aparência natural e durabilidade para acompanhar você em todos os momentos.</p>
+        <div class="hero-actions">
+          <a class="button" href="#agendar">Agende seu horário <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#trabalhos">Conheça meu trabalho</a>
+        </div>
+        <div class="hero-rating"><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><span><strong>5,0</strong> no Google · 30 avaliações</span></div>
+      </div>
+      <figure class="hero-photo">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QEMYDCz4ZIIGtaoOWKJg6BuEwxwa40Bm7Y_Y12FTUQBngm0ughyuzSfVdEndWW_t-Lzhtg6-l9fhyQrTC8fPv2-sUlrCceIq6yoVuwE1Tn_Gy5l6Z7oiaczWj69BV9gC5piv-OoUjPU1k=w224-h484-k-no" alt="Trabalho de nail design feito por Letícia Fernanda" fetchpriority="high">
+        <figcaption class="photo-note">Feito com cuidado, para você.</figcaption>
+      </figure>
+    </section>
+
+    <section class="trust-strip" aria-label="Destaques">
+      <div class="trust-inner wrap">
+        <div class="trust-item"><strong>5,0 ★</strong><span>avaliação no Google</span></div>
+        <div class="trust-item"><strong>30+</strong><span>avaliações de clientes</span></div>
+        <div class="trust-item"><strong>Com carinho</strong><span>atendimento acolhedor e individual</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="trabalhos">
+      <div class="section-heading">
+        <div><div class="eyebrow">Portfólio</div><h2>Um resultado que<br>tem a sua cara.</h2></div>
+        <p class="section-intro">Naturalidade, delicadeza e acabamento cuidadoso em cada unha. Inspire-se com alguns trabalhos.</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0Ytj-TEaVChmMij2Zm55DvWj9YpOQWRlQEVI_CrLu2nwjCT0RiuCfSDmPVYwomDjuHe6eY9SopT6pK4H-N5wUatkTR-rjMb4NsC87JK68eNa5sIu3dXoD8mawnup_zhTxm91zI9PksLj3=w239-h298-k-no" alt="Unhas feitas por Letícia Fernanda" loading="lazy">
+          <figcaption>Seu próximo detalhe favorito</figcaption>
+        </figure>
+        <figure>
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QEMYDCz4ZIIGtaoOWKJg6BuEwxwa40Bm7Y_Y12FTUQBngm0ughyuzSfVdEndWW_t-Lzhtg6-l9fhyQrTC8fPv2-sUlrCceIq6yoVuwE1Tn_Gy5l6Z7oiaczWj69BV9gC5piv-OoUjPU1k=w224-h484-k-no" alt="Detalhe de unhas com acabamento delicado" loading="lazy">
+          <figcaption>Beleza que dura</figcaption>
+        </figure>
+        <figure>
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qw0erxGpQonH2H7qmCN3NzAWD6QKWRp6vprk6Q6uCGkEQi20WMpx9t59iLZeTlqJiEwYRVNBk0hnkI7Zj0ihqByOLHcce4CbiVU8gCSdwdmDpHTiy8a6D7grdpcB2kNuVBh5nJwdzGMEY=w224-h398-k-no" alt="Letícia Fernanda, nail designer" loading="lazy">
+          <figcaption>Um atendimento só seu</figcaption>
+        </figure>
+      </div>
+      <p class="image-credit">Imagens do perfil público da Letícia no Google.</p>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="about-grid wrap">
+        <div class="about-photo"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qw0erxGpQonH2H7qmCN3NzAWD6QKWRp6vprk6Q6uCGkEQi20WMpx9t59iLZeTlqJiEwYRVNBk0hnkI7Zj0ihqByOLHcce4CbiVU8gCSdwdmDpHTiy8a6D7grdpcB2kNuVBh5nJwdzGMEY=w224-h398-k-no" alt="Letícia Fernanda em seu espaço de atendimento" loading="lazy"></div>
+        <div class="about-copy">
+          <div class="eyebrow">Prazer, sou a Lê</div>
+          <h2>Seu momento<br>de cuidado.</h2>
+          <p>Mais do que unhas bonitas, quero que cada visita seja um momento leve e acolhedor. Trabalho com atenção aos detalhes para chegar ao resultado que combina com você.</p>
+          <div class="about-note"><span aria-hidden="true">✳</span><span>Um espaço agradável, limpo e acolhedor, aberto para todas as pessoas.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews wrap" id="avaliacoes">
+      <div class="section-heading">
+        <div><div class="eyebrow">Quem já veio</div><h2>Palavras que aquecem.</h2></div>
+        <p class="section-intro">Nota 5,0 com 30 avaliações no Google.</p>
+      </div>
+      <div class="review-grid">
+        <article class="review"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><blockquote>“O diferencial é o atendimento e o resultado das unhas.”</blockquote><cite>Cliente · avaliação no Google</cite></article>
+        <article class="review"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><blockquote>“A unha que ela faz tem naturalidade, durabilidade, é simplesmente incrível.”</blockquote><cite>Cliente · avaliação no Google</cite></article>
+        <article class="review"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><blockquote>“Ambiente agradável, limpo e acolhedor!”</blockquote><cite>Cliente · avaliação no Google</cite></article>
+      </div>
+    </section>
+
+    <section class="booking" id="agendar">
+      <div class="booking-grid wrap">
+        <div>
+          <div class="eyebrow">Vamos marcar?</div>
+          <h2>Seu próximo horário começa aqui.</h2>
+          <p class="booking-copy">Conte o que você procura e escolha uma data. Vou receber sua mensagem no WhatsApp para confirmar a disponibilidade.</p>
+          <div class="booking-contact">Poços de Caldas · MG<br><a href="https://maps.google.com/?q=Tv.+Monteiro+Lobato,+Vila+Nova,+Po%C3%A7os+de+Caldas+-+MG">Tv. Monteiro Lobato, Vila Nova ↗</a><br><a href="tel:+5535991798765">(35) 99179-8765</a></div>
+        </div>
+        <form class="booking-form" id="booking-form">
+          <div class="field full"><label for="client-name">Seu nome</label><input id="client-name" name="name" autocomplete="name" placeholder="Como posso te chamar?" required></div>
+          <div class="field"><label for="service">Serviço</label><select id="service" name="service" required><option value="" disabled selected>Selecione</option><option>Alongamento em gel</option><option>Manutenção</option><option>Esmaltação em gel</option><option>Outro serviço</option></select></div>
+          <div class="field"><label for="date">Data desejada</label><input id="date" name="date" type="date" required></div>
+          <div class="field full"><label for="message">Observação <span style="font-weight:400">(opcional)</span></label><input id="message" name="message" placeholder="Conte um detalhe, se quiser"></div>
+          <button class="button" type="submit">Continuar pelo WhatsApp <span aria-hidden="true">↗</span></button>
+          <p class="form-note">O pedido de horário será enviado pelo WhatsApp. A data só fica confirmada após retorno da Letícia.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner wrap">
+      <div class="footer-name">Letícia Fernanda <span style="font: 11px var(--sans); color:#b9c7bc">· Nail Designer</span></div>
+      <div class="footer-address">Tv. Monteiro Lobato · Vila Nova<br>Poços de Caldas, MG · <a href="tel:+5535991798765">(35) 99179-8765</a></div>
+    </div>
+  </footer>
+  <a class="button mobile-book" href="#agendar">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+
+  <script>
+    const dateField = document.querySelector("#date");
+    const today = new Date();
+    dateField.min = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+
+    document.querySelector("#booking-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = new FormData(event.currentTarget);
+      const date = new Date(`${form.get("date")}T12:00:00`).toLocaleDateString("pt-BR", {
+        day: "numeric", month: "long", year: "numeric"
+      });
+      const message = [
+        "Olá, Letícia! Gostaria de consultar um horário.",
+        `Nome: ${form.get("name")}`,
+        `Serviço: ${form.get("service")}`,
+        `Data desejada: ${date}`,
+        form.get("message") ? `Observação: ${form.get("message")}` : ""
+      ].filter(Boolean).join("\n");
+      window.open(`https://wa.me/5535991798765?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
